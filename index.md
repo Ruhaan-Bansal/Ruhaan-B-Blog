@@ -1,8 +1,8 @@
 ---
 layout: base
-title: Student Home 
-description: Home Page
+title: Student Blog
+description: Ruhaan Bansal's Blog
 hide: true
 ---
 
-My journey starts here.
+My computer science and software engineering journey starts here. 
