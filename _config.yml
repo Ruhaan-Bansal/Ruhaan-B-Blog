@@ -1,8 +1,8 @@
-title: Ishan Shrivastava's Blog
-description: "Class of 2025"
+title: Ruhaan Bansal's Blog
+description: "Class of 2028"
 owner_name: Ruhaan Bansal
 github_username: Ruhaan-Bansal
-github_repo: "ishanblog"
+github_repo: "ruhaanblog"
 baseurl: "/student_2025"
 future: true
 remote_theme: jekyll/minima
