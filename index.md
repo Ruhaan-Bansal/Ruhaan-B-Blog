@@ -22,4 +22,8 @@ High School English 2
 
 Compacted Int II/III A 2
 
-I have done Science Olympiad 
+I have done Science Olympiad for 3 years in middle school.
+
+3 x Regional Champion. 
+
+2nd in State for Codebusters. 
