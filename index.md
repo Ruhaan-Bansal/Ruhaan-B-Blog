@@ -27,3 +27,6 @@ I have done Science Olympiad for 3 years in middle school.
 3 x Regional Champion. 
 
 2nd in State for Codebusters. 
+
+<img src="https://www.tenniscanada.com/wp-content/uploads/2020/02/stock-ball-racquet.jpg" alt="Tennis Court" >
+
