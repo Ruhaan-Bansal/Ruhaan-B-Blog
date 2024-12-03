@@ -1,14 +1,12 @@
 ---
 layout: base
-title: Student Home cd
-cd nighthawk/portfolio_2025/scripts
-./activate_ubuntu.shcd
+title: Student Home 
 description: Home Page
 hide: true
 ---
 Class of 2028'
 My journey starts here.
-
+ 
 
 I am a freshman in DNHS. 
 
@@ -24,3 +22,4 @@ High School English 2
 
 Compacted Int II/III A 2
 
+I have done Science Olympiad 
