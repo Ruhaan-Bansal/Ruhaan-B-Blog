@@ -7,11 +7,9 @@ github_repo: "ruhaanblog"
 future: true
 remote_theme: jekyll/minima
 minima:
-  skin: light 
-  social_links:
-    - { platform: github, user_url: "https://github.com/nighthawkcoders"}
-    - { platform: x, user_url: "https://x.com/NighthawkCoding/" }
-    - { platform: youtube, user_url: "https://www.youtube.com/@nighthawkcodingsociety2868" }
+  skin: 
+  social_link:
+    - { platform: github, user_url: "https://https://github.com/Ruhaan-Bansal"}
 # remote_theme: pages-themes/midnight@v0.2.0
 # remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/dinky@v0.2.0
