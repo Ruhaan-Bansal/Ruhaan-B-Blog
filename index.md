@@ -34,4 +34,4 @@ I like to play tennis with my friends and family. I also play competitively some
 
 I went to Yosemite in the summer of 2024.
 
-<img src="https://www.nps.gov/common/uploads/cropped_image/primary/944B8190-DC70-F04B-19C33DF399EFF953.jpg?width=1600&quality=90&mode=crop" alt="Yosemite Falls" >
+<img src="https://www.moon.com/wp-content/uploads/2017/07/CA_YosemiteFalls_Maridav-iStock-91716848.jpg" alt="Yosemite Falls" >
