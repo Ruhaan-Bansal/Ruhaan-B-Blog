@@ -25,8 +25,13 @@ I have done Science Olympiad for 3 years in middle school.
 
 I have learn the basics of Python and want to learn more languages in Computer Science such as HTML and Java. 
 
-I love to play tennis with my friends and competitively 
+I like to play tennis with my friends and family. I also play competitively sometimes.
+ 
+[UTR](https://app.utrsports.net/profiles/4859895)
+
 
 <img src="https://www.tenniscanada.com/wp-content/uploads/2020/02/stock-ball-racquet.jpg" alt="Tennis Court" >  
 
-<img src=">
+I went to Yosemite in the summer of 2024.
+
+<img src="https://www.nps.gov/common/uploads/cropped_image/primary/944B8190-DC70-F04B-19C33DF399EFF953.jpg?width=1600&quality=90&mode=crop" alt="Yosemite Falls" >
