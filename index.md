@@ -30,7 +30,7 @@ I like to play tennis with my friends and family. I also play competitively some
 [UTR](https://app.utrsports.net/profiles/4859895)
 
 
-<img src="https://www.tenniscanada.com/wp-content/uploads/2020/02/stock-ball-racquet.jpg" alt="Tennis Court" >  
+<img src="https://www.tenniscanada.com/wp-content/uploads/2020/02/stock-ball-racquet.jpg" alt="Tennis Court" style="width: 50%; height: 50%;">
 
 I went to Yosemite in the summer of 2024.
 
