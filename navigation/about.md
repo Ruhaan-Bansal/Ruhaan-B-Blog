@@ -1,7 +1,10 @@
 ---
 layout: page
-title: About
+title: About the Creator 
 permalink: /about/
 ---
+Creator : Ruhaan Bansal 
 
-Creator of Student 2025
+DNHS Class of 2028
+
+
