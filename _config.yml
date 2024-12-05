@@ -5,14 +5,14 @@ github_username: Ruhaan-Bansal
 github_repo: "ruhaanblog"
 # baseurl: "/student_2025"
 future: true
-remote_theme: jekyll/minima
+# remote_theme: jekyll/minima
 minima:
   skin: 
   social_link:
     - { platform: github, user_url: "https://https://github.com/Ruhaan-Bansal"}
     - { platform: x, user_url: "https://x.com/NighthawkCoding/" }
     - { platform: youtube, user_url: "https://www.youtube.com/@nighthawkcodingsociety2868" }
-# remote_theme: pages-themes/midnight@v0.2.0
+remote_theme: pages-themes/midnight@v0.2.0
 # remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/dinky@v0.2.0
 # remote_theme: pages-themes/minimal@v0.2.0
