@@ -12,4 +12,4 @@ I have learn the basics of Python and want to learn more languages in Computer S
 
 [GITHUB](https://github.com/Ruhaan-Bansal)
 
-[Tool_Verification](https://ruhaan-bansal.github.io/Ruhaan-B-Blog/devops/tools/verify)
+[Tool Verification](https://ruhaan-bansal.github.io/Ruhaan-B-Blog/devops/tools/verify)
