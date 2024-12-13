@@ -2,13 +2,7 @@
 layout: Snake
 title: Snake Game
 search_exclude: true
-permalink: /Snake Games/
----
-
----
-layout: base
-title: Snake
-permalink: /snake/
+permalink: /snake
 ---
 
 <style>
