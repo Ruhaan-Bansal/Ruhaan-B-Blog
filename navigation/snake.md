@@ -13,8 +13,8 @@ permalink: /snake/
     canvas {
         display: none;
         border-style: solid;
-        border-width: 10px;
-        border-color: rgb(0, 0, 0);
+        border-width: 20px;
+        border-color: rgb(51, 204, 51);
     }
     canvas:focus {
         outline: none;
@@ -50,7 +50,7 @@ permalink: /snake/
     }
     #setting input:checked + label {
         background-color: #FFF;
-        color: #000;
+        color: #000
     }
 </style>
 
@@ -70,7 +70,7 @@ permalink: /snake/
             <a id="new_game1" class="link-alert">new game</a>
             <a id="setting_menu1" class="link-alert">settings</a>
         </div>
-        <canvas id="snake" class="wrap" width="640" height="640" tabindex="1"></canvas>
+        <canvas id="snake" class="wrap" width="400" height="400" tabindex="1"></canvas>
         <div id="setting" class="py-4 text-light">
             <p>Settings Screen, press <span style="background-color:rgb(220, 37, 37); color: #000000">space</span> to go back to playing</p>
             <a id="new_game2" class="link-alert">new game</a>
@@ -112,7 +112,7 @@ permalink: /snake/
     const button_setting_menu = document.getElementById("setting_menu");
     const button_setting_menu1 = document.getElementById("setting_menu1");
 
-    const BLOCK = 40;
+    const BLOCK = 20;
     let SCREEN = SCREEN_MENU;
     let snake;
     let snake_dir;
@@ -237,7 +237,7 @@ permalink: /snake/
         }
 
         ctx.beginPath();
-        ctx.fillStyle = "aqua";
+        ctx.fillStyle = "lightgreen";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // Draw the head as a tennis racket
@@ -290,7 +290,7 @@ permalink: /snake/
     };
 
     let activeDot = function (x, y) {
-        ctx.fillStyle = "#000000";
+        ctx.fillStyle = "#33CC33";
         ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
     };
 
