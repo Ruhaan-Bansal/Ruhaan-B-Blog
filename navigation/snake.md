@@ -15,7 +15,7 @@ permalink: /snake/
         display: none;
         border-style: solid;
         border-width: 50px;
-        border-color: rgb(0, 0, 0);
+        border-color: rgb(30, 121, 44);
     }
     canvas:focus {
         outline: none;
@@ -51,7 +51,7 @@ permalink: /snake/
     }
     #setting input:checked + label {
         background-color: #FFF;
-        color: #000;q`
+        color: #000000
     }
 </style>
 
@@ -238,7 +238,7 @@ permalink: /snake/
         }
 
         ctx.beginPath();
-        ctx.fillStyle = "aqua";
+        ctx.fillStyle = "red";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // Draw the head as a tennis racket
@@ -291,7 +291,7 @@ permalink: /snake/
     };
 
     let activeDot = function (x, y) {
-        ctx.fillStyle = "#000000";
+        ctx.fillStyle = "#1E792C";
         ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
     };
 
