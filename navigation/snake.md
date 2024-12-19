@@ -291,7 +291,7 @@ permalink: /snake/
     };
 
     let activeDot = function (x, y) {
-        ctx.fillStyle = #1e792c";
+        ctx.fillStyle = "#000000";
         ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
     };
 
