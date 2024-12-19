@@ -128,7 +128,7 @@ permalink: /snake/
     tennisRacketImage.src = "https://github.com/user-attachments/assets/e00197ae-8c7d-4cf2-8131-4bb47399a5fc";
 
     const tennisBallImage = new Image();
-    tennisBallImage.src = "https://github.com/user-attachments/assets/37993622-0c06-4a11-8985-bb60bfe19069";   
+    tennisBallImage.src = "https://github.com/user-attachments/assets/107ea9ce-16c9-4866-9414-518fa866a15f";   
 
     let showScreen = function (screen_opt) {
         SCREEN = screen_opt;
