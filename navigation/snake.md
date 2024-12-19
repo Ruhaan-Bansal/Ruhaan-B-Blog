@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Snake
-search_exclude: true
+title: Snake    
 permalink: /snake/
 ---
 
@@ -14,8 +13,8 @@ permalink: /snake/
     canvas {
         display: none;
         border-style: solid;
-        border-width: 50px;
-        border-color: rgb(30, 121, 44);
+        border-width: 10px;
+        border-color: rgb(0, 0, 0);
     }
     canvas:focus {
         outline: none;
@@ -50,8 +49,8 @@ permalink: /snake/
         cursor: pointer;
     }
     #setting input:checked + label {
-        background-color: #000000;
-        color: #000000
+        background-color: #FFF;
+        color: #000;
     }
 </style>
 
@@ -71,17 +70,17 @@ permalink: /snake/
             <a id="new_game1" class="link-alert">new game</a>
             <a id="setting_menu1" class="link-alert">settings</a>
         </div>
-        <canvas id="snake" class="wrap" width="800" height="800" tabindex="1"></canvas>
+        <canvas id="snake" class="wrap" width="640" height="640" tabindex="1"></canvas>
         <div id="setting" class="py-4 text-light">
             <p>Settings Screen, press <span style="background-color:rgb(220, 37, 37); color: #000000">space</span> to go back to playing</p>
             <a id="new_game2" class="link-alert">new game</a>
             <br>
             <p>Speed:
-                <input id="speed1" type="radio" name="speed" value="200" checked />
+                <input id="speed1" type="radio" name="speed" value="120" checked />
                 <label for="speed1">Slow</label>
-                <input id="speed2" type="radio" name="speed" value="150" />
+                <input id="speed2" type="radio" name="speed" value="75" />
                 <label for="speed2">Normal</label>
-                <input id="speed3" type="radio" name="speed" value="100" />
+                <input id="speed3" type="radio" name="speed" value="35" />
                 <label for="speed3">Fast</label>
             </p>
             <p>Wall:
@@ -113,7 +112,7 @@ permalink: /snake/
     const button_setting_menu = document.getElementById("setting_menu");
     const button_setting_menu1 = document.getElementById("setting_menu1");
 
-    const BLOCK = 50;
+    const BLOCK = 40;
     let SCREEN = SCREEN_MENU;
     let snake;
     let snake_dir;
@@ -125,10 +124,10 @@ permalink: /snake/
 
     // Load tennis racket image
     const tennisRacketImage = new Image();
-    tennisRacketImage.src = "https://github.com/user-attachments/assets/e00197ae-8c7d-4cf2-8131-4bb47399a5fc";
+    tennisRacketImage.src = "https://github.com/user-attachments/assets/ed018364-1285-4b1e-8735-8c777c8e68da";
 
     const tennisBallImage = new Image();
-    tennisBallImage.src = "https://github.com/user-attachments/assets/107ea9ce-16c9-4866-9414-518fa866a15f";   
+    tennisBallImage.src = "https://github.com/user-attachments/assets/acecd130-1e17-4bd1-a589-15e57dec2b8b";
 
     let showScreen = function (screen_opt) {
         SCREEN = screen_opt;
@@ -238,7 +237,7 @@ permalink: /snake/
         }
 
         ctx.beginPath();
-        ctx.fillStyle = "#6CBB3C";
+        ctx.fillStyle = "aqua";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // Draw the head as a tennis racket
