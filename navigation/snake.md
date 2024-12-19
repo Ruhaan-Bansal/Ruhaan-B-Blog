@@ -50,7 +50,7 @@ permalink: /snake/
         cursor: pointer;
     }
     #setting input:checked + label {
-        background-color: #FFF;
+        background-color: #000000;
         color: #000000
     }
 </style>
@@ -125,10 +125,10 @@ permalink: /snake/
 
     // Load tennis racket image
     const tennisRacketImage = new Image();
-    tennisRacketImage.src = "https://github.com/user-attachments/assets/94d36077-6cb7-4fb5-89aa-653ef3bdd426";
+    tennisRacketImage.src = "https://github.com/user-attachments/assets/e00197ae-8c7d-4cf2-8131-4bb47399a5fc";
 
     const tennisBallImage = new Image();
-    tennisBallImage.src = "https://github.com/user-attachments/assets/c67017a1-0c94-43bf-b08b-3cfcdd739950";   
+    tennisBallImage.src = "https://github.com/user-attachments/assets/37993622-0c06-4a11-8985-bb60bfe19069";   
 
     let showScreen = function (screen_opt) {
         SCREEN = screen_opt;
@@ -238,7 +238,7 @@ permalink: /snake/
         }
 
         ctx.beginPath();
-        ctx.fillStyle = "red";
+        ctx.fillStyle = "#6CBB3C";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // Draw the head as a tennis racket
@@ -291,7 +291,7 @@ permalink: /snake/
     };
 
     let activeDot = function (x, y) {
-        ctx.fillStyle = "#1E792C";
+        ctx.fillStyle = "#000000";
         ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
     };
 
