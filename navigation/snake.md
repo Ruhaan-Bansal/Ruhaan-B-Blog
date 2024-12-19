@@ -70,7 +70,7 @@ permalink: /snake/
             <a id="new_game1" class="link-alert">new game</a>
             <a id="setting_menu1" class="link-alert">settings</a>
         </div>
-        <canvas id="snake" class="wrap" width="400" height="400" tabindex="1"></canvas>
+        <canvas id="snake" class="wrap" width="600" height="600" tabindex="1"></canvas>
         <div id="setting" class="py-4 text-light">
             <p>Settings Screen, press <span style="background-color:rgb(220, 37, 37); color: #000000">space</span> to go back to playing</p>
             <a id="new_game2" class="link-alert">new game</a>
@@ -112,7 +112,7 @@ permalink: /snake/
     const button_setting_menu = document.getElementById("setting_menu");
     const button_setting_menu1 = document.getElementById("setting_menu1");
 
-    const BLOCK = 20;
+    const BLOCK = 30;
     let SCREEN = SCREEN_MENU;
     let snake;
     let snake_dir;
