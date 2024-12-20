@@ -237,7 +237,7 @@ permalink: /snake/
         }
 
         ctx.beginPath();
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "red";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // Draw the head as a tennis racket
@@ -290,7 +290,7 @@ permalink: /snake/
     };
 
     let activeDot = function (x, y) {
-        ctx.fillStyle = "#7E121D";
+        ctx.fillStyle = "#034f1b";
         ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
     };
 
