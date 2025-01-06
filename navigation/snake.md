@@ -203,7 +203,7 @@ permalink: /snake/
 
         if (wall === 1) {
             if (snake[0].x < 0 || snake[0].x === canvas.width / BLOCK || snake[0].y < 0 || snake[0].y === canvas.height / BLOCK) {
-                showScreen(SCREEN_GAME_OVER);
+                 showScreen(SCREEN_GAME_OVER);
                 return;
             }
         } else {
