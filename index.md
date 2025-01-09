@@ -25,6 +25,19 @@ Some stuff I learned:
     <li>When you go to someone to present something you have to be clear and concise and if not the other person won't understand you and get you as a serious person.</li> 
     <li>Lots of colleges will ask you "What type of person are you?" This question is mainly asked in interviews or clubs.</li> 
     <li>Just being clear and incorpoortating agile methodiology has helped some people commmunicating their ideas.</li>
-    <li> You have to be clear in big companies with commits in VS code and github as it could get unorganized.</li>
-    <li> 
+    <li>You have to be clear in big companies with commits in VS code and github as it could get unorganized.</li>
+    <li>Scrum masters will be quite common in higher levels of coding as you will be assigned roles which you might not know.</li>
+    <li>Lots of coding colleges will mainly use coding flowcharts to see the progess and the nested conditionals with Javascript. </li>
+    <li>You should have taken more community college credit classes rather than all APs because even if you have to retake the class in college you will have prior knowledge of the college</li>
+    <li>In high school you should focus on your grades, but in college they won't focuse on your GPA but rather your project based skills</li>
+    <li>Some extracirriculars that you should learn in high school are learnign to make websites which can help anyone </li>
+    <li>David did F1D for flight and gliders and helicopters which helped him in his passion for aerospace</li>
+    <li>Cyber Patriot would help with security in Linux, Windows, and how to network in jobs which helped them in their job interviews </li>
+<ul>
+College Application Process: 
+<ul>
+    <li>Do not write the essays for college applications the night before it is due. Also most IVY leagues don't look for APs and they wont transfer them as college credits.</li>
+    <li>Talking with other people about projects is good for college application essays, but projects that connect issues/topics of interest such as AI are extremely good </li>
+    <li>Show yourself with passion and show much you can contribute to the university in a good way with passion will help</li>
+
 </ul>
