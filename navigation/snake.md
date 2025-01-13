@@ -6,7 +6,6 @@ description: Home Page
 hide: false
 ---
 
-</p>
 <style>
     body{
     }
