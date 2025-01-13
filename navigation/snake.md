@@ -1,6 +1,7 @@
 ---
 layout: base
-title: Student Home 
+title: Snake
+permalink: /snake/
 description: Home Page
 hide: false
 ---
