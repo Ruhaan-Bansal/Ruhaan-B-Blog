@@ -4,7 +4,7 @@ title: Student Lessons HW and Popcorn Hacks
 description: My HW and Popcorn Hacks
 hide: true
 ---
-<table>
+</table>
     <tr>
         <td><img src="{{site.baseurl}}//images/logo.png" height="60" title="Frontend" alt=""></td>
         <td><a href="{{site.baseurl}}/csse/lessons/variables/popcornHack">Variables-Popcornhacks</a></td>
