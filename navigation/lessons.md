@@ -20,7 +20,8 @@ NESTED CONDITIONALS
 <table>
     <tr>
         <td><img src="{{site.baseurl}}//images/logo.png" height="60" title="Frontend" alt=""></td>
-        <td><a href="{{site.baseurl}}/csse/lessons/variables/popcornHack1">NestedConditionals-Popcornhack1</a></td>
-        <td><a href="{{site.baseurl}}/csse/lessons/variables/popcornHack2">NestedConditionals-Popcornhack2</a></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/nestedconditionals/popcornHack1">NestedConditionals-Popcornhack1</a></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/nestedconditionals/popcornHack2">NestedConditionals-Popcornhack2</a></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/nestedconditionals/homework">NestedConditionals-Homework</a></td>
     </tr>
 </table>
