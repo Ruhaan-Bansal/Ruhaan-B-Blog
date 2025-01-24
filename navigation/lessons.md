@@ -15,7 +15,7 @@ VARIABLES
     </tr>
 </table>
 
-NESTED CONDITIONALS
+NESTED CONDITIONALS 
 
 <table>
     <tr>
