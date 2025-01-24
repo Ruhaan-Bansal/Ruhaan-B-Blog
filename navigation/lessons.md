@@ -30,7 +30,7 @@ ARRAYS
 
 <table>
     <tr>
-        <td><img = src="{{site.baseurl}}//images/logo.png" height="60" title = "Frontend" alt= ""></td>
+        <td><img src="{{site.baseurl}}//images/logo.png" height="60" title="Frontend" alt=""></td>
         <td><a href="{{site.baseurl}}/csse/lessons/arrays/homework/">Arrays-Homework</a></td>
         <td><a href="{{site.baseurl}}/csse/lessons/arrays/popcornhack1/">Arrays-Popcornhack1</a></td>
         <td><a href="{{site.baseurl}}/csse/lessons/arrays/popcornhack2/">Arrays-Popcornhack2</a></td>
