@@ -25,3 +25,14 @@ NESTED CONDITIONALS
         <td><a href="{{site.baseurl}}/csse/lessons/nestedconditionals/hw">NestedConditionals-Homework</a></td>
     </tr>
 </table>
+
+ARRAYS
+
+<table>
+    <tr>
+        <td><img src="{{site.baseurl}}//images/logo.png" height="60" title="Frontend" alt=""></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/arrays/ph1">Arrays-Popcornhack1</a></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/arrays/ph2">Arrays-Popcornhack2</a></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/arrays/hw">Arrays-Homework</a></td>
+    </tr>
+</table>
