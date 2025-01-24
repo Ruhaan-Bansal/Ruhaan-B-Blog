@@ -1,108 +1,47 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
+  <!DOCTYPE html>
+  <html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+      <meta charset="UTF-8">
 
-    <!-- SEO and Preloading Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f47c2a"> <!-- Theme color set to orange -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-    <!-- Custom CSS -->
-    <style>
-      body {
-        background-color: #808080; /* Gray background */
-        font-family: 'Open Sans', sans-serif; /* Clean, modern font */
-        margin: 0;
-        padding: 0;
-        color: #ffffff; /* White text for contrast */
-      }
+  {% seo %}
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#157878">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+      {% include head-custom.html %}
+    </head>
+    <body>
+      <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-      .page-header {
-        text-align: center;
-        padding: 1em;
-        background-color: #f47c2a; /* Orange baseline for header */
-        color: #ffffff;
-      }
-
-      .btn {
-        display: inline-block;
-        margin: 0.5em;
-        padding: 0.5em 1em;
-        background-color: #f47c2a; /* Orange button */
-        color: #ffffff; /* White button text */
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-      }
-
-      .btn:hover {
-        background-color: #ff9e4d; /* Lighter orange hover */
-      }
-
-      .main-content {
-        padding: 2em;
-        background-color: #666666; /* Slightly darker gray for main content */
-        color: #ffffff; /* White text */
-        border-radius: 8px;
-        margin: 1em auto;
-        max-width: 800px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-      }
-
-      .site-footer {
-        text-align: center;
-        padding: 1em;
-        background-color: #f47c2a; /* Orange baseline for footer */
-        color: #ffffff;
-        font-size: 0.9em;
-      }
-
-      a {
-        color: #ffcc99; /* Light orange links */
-      }
-
-      a:hover {
-        color: #ffffff; /* White links on hover */
-      }
-    </style>
-  </head>
-  <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
-
-    <!-- Header -->
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <a href="{{ site.baseurl }}/" class="btn">Nighthawk Pages</a>
-      {% assign default_paths = site.pages | map: "path" %}
-      {% assign page_paths = site.header_pages | default: default_paths %}
-      {% for path in page_paths %}
-        {% assign my_page = site.pages | where: "path", path | first %}
-        {% if my_page.title %}
-          <a href="{{ my_page.url | relative_url }}" class="btn">{{ my_page.title | escape }}</a>
+      <header class="page-header" role="banner">
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+        <a href="{{ site.baseurl }}/" class="btn">Nighthawk Pages</a>
+        {%- assign default_paths = site.pages | map: "path" -%}
+        {%- assign page_paths = site.header_pages | default: default_paths -%}
+        {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+        {%- for path in page_paths -%}
+              {%- assign my_page = site.pages | where: "path", path | first -%}
+              {%- if my_page.title -%}
+              <a href="{{ my_page.url | relative_url }}" class="btn">{{ my_page.title | escape }}</a>
+              {%- endif -%}
+        {%- endfor -%}
+        {% if site.github.is_project_page %}
+          <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
         {% endif %}
-      {% endfor %}
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-    </header>
+      </header>
 
-    <!-- Main Content -->
-    <main id="content" class="main-content" role="main">
-      {{ content }}
-    </main>
+      <main id="content" class="main-content" role="main">
+        {{ content }}
 
-    <!-- Footer -->
-    <footer class="site-footer">
-      {% if site.github.is_project_page %}
-        <span class="site-footer-owner">
-          <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
-        </span>
-      {% endif %}
-      <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-    </footer>
-  </body>
-</html>
+        <footer class="site-footer">
+          {% if site.github.is_project_page %}
+            <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+          {% endif %}
+          <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+        </footer>
+      </main>
+    </body>
+  </html>
