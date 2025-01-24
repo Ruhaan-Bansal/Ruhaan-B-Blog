@@ -2,68 +2,17 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-    {% seo %}
+
+{% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
+    <meta name="theme-color" content="#157278">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <style>
-      /* Set the blue-teal gradient background */
-      body {
-        background: linear-gradient(to right, #00bcd4, #009688); /* Gradient from blue-teal to teal */
-        color: white; /* Set text color to white */
-        font-family: 'Open Sans', sans-serif; /* Use the specified font */
-        margin: 0;
-        padding: 0;
-      }
-
-      /* Modify header styling */
-      .page-header {
-        background: rgba(0, 0, 0, 0.5); /* Optional: make the header background slightly transparent */
-        color: white;
-        padding: 20px;
-      }
-
-      .page-header h1, .page-header h2 {
-        font-size: 2rem;
-      }
-
-      /* Button styling */
-      .btn {
-        background-color: green; /* Set button color to green */
-        color: white; /* Button text color */
-        padding: 10px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-      }
-
-      .btn:hover {
-        background-color: darkgreen; /* Change button color to dark green on hover */
-        color: white;
-      }
-
-      /* Main content styling */
-      .main-content {
-        background-color: white;  /* Set the background of the main content area to white */
-        color: black; /* Set text color to black for better readability */
-        padding: 20px;
-        margin: 20px;
-        border-radius: 10px; /* Optional: add rounded corners to the content area */
-      }
-
-      /* Footer styling */
-      .site-footer {
-        background: rgba(0, 0, 0, 0.5); /* Optional: footer with transparent background */
-        color: white;
-        text-align: center;
-        padding: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
   </head>
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
-
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
