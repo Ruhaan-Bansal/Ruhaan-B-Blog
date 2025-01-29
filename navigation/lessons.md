@@ -36,3 +36,14 @@ ARRAYS
         <td><a href="{{site.baseurl}}/csse/lessons/arrays/hw">Arrays-Homework</a></td>
     </tr>
 </table>
+
+CLASSES AND METHODS
+
+<table>
+    <tr>
+        <td><img src="{{site.baseurl}}//images/logo.png" height="60" title="Frontend" alt=""></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/classes_and_methods/ph">Classes and Methods-Popcornhacks</a></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/classes_and_methods/hw">Classes and Methods-Homework</a></td>
+        
+    </tr>
+</table>
