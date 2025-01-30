@@ -43,7 +43,16 @@ CLASSES AND METHODS
     <tr>
         <td><img src="{{site.baseurl}}//images/logo.png" height="60" title="Frontend" alt=""></td>
         <td><a href="{{site.baseurl}}/csse/lessons/classes_and_methods/ph">Classes and Methods-Popcornhacks</a></td>
-        <td><a href="{{site.baseurl}}/csse/lessons/classes_and_methods/hw">Classes and Methods-Homework</a></td>
-        
+        <td><a href="{{site.baseurl}}/csse/lessons/classes_and_methods/hw">Classes and Methods-Homework</a></td>  
+    </tr>
+</table>
+
+CONDITIONALS
+
+<table>
+    <tr>
+        <td><img src="{{site.baseurl}}//images/logo.png" height="60" title="Frontend" alt=""></td>
+        <td><a href="{{site.baseurl}}/csse/fundamentals/conditionals/ph">Conditionals-Popcornhacks</a></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/classes_and_methods/hw">Conditionals-Homework</a></td>  
     </tr>
 </table>
