@@ -47,12 +47,12 @@ CLASSES AND METHODS
     </tr>
 </table>
 
-CONDITIONALS
+CONDITIONS
 
 <table>
     <tr>
         <td><img src="{{site.baseurl}}//images/logo.png" height="60" title="Frontend" alt=""></td>
-        <td><a href="{{site.baseurl}}/csse/fundamentals/conditionals/ph">Conditionals-Popcornhacks</a></td>
-        <td><a href="{{site.baseurl}}/csse/lessons/classes_and_methods/hw">Conditionals-Homework</a></td>  
+        <td><a href="{{site.baseurl}}/csse/lessons/conditions/ph">Conditions-Popcornhacks</a></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/conditions/hw">Conditions-Homework</a></td>  
     </tr>
 </table>
