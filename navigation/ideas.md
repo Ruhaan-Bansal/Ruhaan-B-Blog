@@ -16,12 +16,12 @@ There will be a few NPCs in our games
 
 #### 1. Mr. Mortensen and Mr. Brown 
 
-Mr. Mortensen and Mr. Brown is designed to help you get started with your coding journey such as help you getting starting with your tools setup and learning how to code in VS code with your repository.
+Mr. Mortensen and Mr. Brown are designed to help you get started with your coding journey such as help you getting starting with your tools setup and learning how to code in VS code with your repository.
 They will also help you as a teacher and will provide checkpoints (questions) when you interact with them. 
 
 #### 2. Our helpful TA's (Rachit and Tanisha)
 
-Our TA's who are our super seniors are supposed to help us if there is any issue. THey will be providing some hints throughout the game throughout your quest for completion of the cool project that you are doing. They will be located in different places in the game. The NPC will ask questions about clone, pull, push, rebase, and other VS and Javascript functions. 
+Our TA's who are our super seniors are supposed to help us if there is any issue. They will be providing some hints throughout the game throughout your quest for completion of the cool project that you are doing. They will be located in different places in the game. The NPC's will ask questions about clone, pull, push, rebase, and other VS and Javascript functions. 
 
 ## Quests 
 
