@@ -57,3 +57,15 @@ CONDITIONS
         <td><a href="{{site.baseurl}}/csse/lessons/conditions/hw">Conditions-Homework</a></td>  
     </tr>
 </table>
+
+BOOLEANS
+
+<table>
+    <tr>
+        <td><img src="{{site.baseurl}}//images/logo.png" height="60" title="Frontend" alt=""></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/booleans/ph">Booleans-Popcornhacks</a></td>
+        <td><a href="{{site.baseurl}}/csse/lessons/booleans/hw">Booleans-Homework</a></td>  
+    </tr>
+</table>
+
+
