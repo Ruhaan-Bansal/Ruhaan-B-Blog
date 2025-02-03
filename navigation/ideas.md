@@ -29,7 +29,29 @@ Our primary quest and goal of this game is to finish our main project which is m
 
 ## Images
 
-We will currently take a few pictures of our real life NPC's and we will find someone for Mr. Brown. 
+### Rachit 
+
+This is our sprite for Rachit. Rachit plays varsity tennis for DNHS and is sometimes working on his computer 
+
+<img alt ="Rachit" src="https://github.com/user-attachments/assets/61184007-5520-42e0-875d-31350394072d" width="200" height="200">   
+
+### Tanisha 
+
+This is our sprite for Tanisha. Tanisha plays varsity field hockey for DNHS and is sometimes working on her computer 
+
+<img alt ="Tanisha" src="https://github.com/user-attachments/assets/e95d5c31-bb30-4622-8fc0-12048b5ad35c" width="200" height="200"> 
+
+### Mr. Mortensen 
+
+This our sprite for Mr. Mortensen. Mr. Mortensen teaches CSSE, CSP, CSA and is the computer science teacher at Del Norte High School 
+
+<img alt ="Mr.Mortensen" src="https://github.com/user-attachments/assets/98297230-5651-4a79-a613-4dcbd82ab439" width="200" height="200"> 
+
+### Mr. Brown
+
+This our sprite for Mr. Brown. Mr. Mortensen used to teach CSSE, CSP and is one of computer science teacher at Del Norte High School 
+
+<img alt ="Mr.Mortensen" src="https://github.com/user-attachments/assets/074dbd3c-6066-4a6f-97b3-6036431f318f" width="200" height="200"> 
 
 ## Obstacles
 
@@ -66,3 +88,4 @@ There are many other such minor functions in the game in which I don't have enou
     2. isCollison(Target)
     
 OUR MOVITIVATION BEHIND THIS GAME IS TO MAKE SURE THAT THE PEOPLE WHO PLAY IT HAVE FUN WHILE LEARNING MORE CODE.
+
