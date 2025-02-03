@@ -8,7 +8,7 @@ permalink: /ideas/
 
 This game is going to be a coding adventure for the people who will play it.
 
-The player (computer) will start in a world with a cyberish background (green and black colors) with lines of code in their also.
+The player (computer) will start in a world in DNHS and will move to diffrent places of the campus 
 
 ## NPCS 
 
