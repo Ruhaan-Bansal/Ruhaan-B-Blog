@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ideas for RPG Game 
-permalink: /ideas /
+permalink: /ideas/
 ---
 
 ## Game Idea 

@@ -2,6 +2,7 @@
 layout: base
 title: Student Lessons HW and Popcorn Hacks 
 description: My HW and Popcorn Hacks
+permalink: /lessons/
 hide: true
 ---
 VARIABLES
