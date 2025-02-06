@@ -1,10 +1,10 @@
 ---
-layout: base
+layout: page
 title: Adventure Game
 permalink: /gamify/adventureGame
 ---
 
-<style>
+<style>s
 /* Existing CSS styling */
 #custom-prompt {
     display: none;
