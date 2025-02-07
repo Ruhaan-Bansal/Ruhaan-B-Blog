@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: base
 title: Adventure Game
 permalink: /gamify/adventureGame
 ---
 
-<style>s
+<style>
 /* Existing CSS styling */
 #custom-prompt {
     display: none;
@@ -166,7 +166,7 @@ permalink: /gamify/adventureGame
     // Function to track NPC interactions
     function trackNpcInteraction() {
         // List of possible NPCs to track (in order)
-        const possibleNpcs = ["Mr.Mortensen", "Rachit", "Tanisha"];
+        const possibleNpcs = ["Tux", "Octocat", "Linux Robot"];
 
         // If the player hasn't interacted yet, add the next NPC in order
         if (npcTracker.length < possibleNpcs.length) {
