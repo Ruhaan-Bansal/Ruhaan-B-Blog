@@ -18,6 +18,8 @@ CS Panel Notes.
 
 Some stuff I learned: 
 
+<img alt ="Extra Credit" src="https://github.com/user-attachments/assets/e34cf8d8-7f18-442d-9296-d7dde1834abb" width="300" height="400">
+
 <ul>
     <li>The main thing in STEM is that you have to make sure that you have fun.</li>
     <li>Another thing was to learn how to do the process such as a the commands when coding.</li>
@@ -41,3 +43,4 @@ College Application Process:
     <li>Show yourself with passion and show much you can contribute to the university in a good way with passion will help</li>
 
 </ul>
+
