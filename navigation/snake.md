@@ -64,7 +64,7 @@ hide: false
         color: #001;
     }
 </style>
-<h2>Snake Game Verson 1.17: Im gonna destroy your eyes</h2>
+<h2>Snake Game Verson 1.17: Im Gonna Destroy Your Eyes</h2>
 <div class="container">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <p class="fs-4">Score: <span id="score_value">0</span></p>

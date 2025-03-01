@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Final Exam CSSE 1
+permalink: /final/
 description: Ruhaan Bansal's Final Exam CSSE 1
 hide: true
 ---
