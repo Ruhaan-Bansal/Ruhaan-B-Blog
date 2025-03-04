@@ -36,12 +36,6 @@ hide: true
 - Live Reviews and Presentations
     1. I presented a lot of checkpoints to Mr. Mortensen alongside with my TA's.
 
-        a. I presented all my ideas, and projects to Mr. Mortensen 
-
-        b. Two special projects that I presented to Mr. Mortensen were the snake game in which I made my background changing color and the snake color also changing. 
-        <a href="https://ruhaan-bansal.github.io/Ruhaan-B-Blog/snake/" style="display: inline-block;padding: 20px 20px; background-color: #FFA500; color: #000000; text-decoration: none; font-size: 16px; border-radius: 10px;">Snake</a>
-
-
     2. I presented twice, the first being the Javascript Lesson and the second being my game demonstration at N@TM.
 
 <a href="https://ruhaan-bansal.github.io/port_2025/gamify/adventureGame" style="display: inline-block;padding: 20px 20px; background-color: #40E0D0; color: #000000; text-decoration: none; font-size: 16px; border-radius: 10px;">Adventure Game</a>
