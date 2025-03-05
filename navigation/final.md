@@ -47,7 +47,7 @@ permalink: /csse1final/
     <li>Second tinker - we created a class called collision which was the same as an NPC but it didn't take the spritesheet but rather has a hitbox in which there would be questions for the player to answer. The collision was layered over a rock in the background.</li>
     <li>Third tinker - we changed the initial position of the sprites but also added another code line of the init position converted into pixels so that you change the sprite location and it would be shown in the game</li>
     <li>Image of ideas for our adventure game level</li>
-    <li>We did add some pars of what functions that were said in the diagram such as update(), spriteWidth and spriteHeight for players and NPCs. Some things that we didn't do due to time constraints and my partner goofing off were the movement of the sprites as he was supposed to work on the animation of the sprites.</li>
+    <li>We did add some parts of what functions that were said in the diagram such as update(), spriteWidth and spriteHeight for players and NPCs. Some things that we didn't do due to time constraints and my partner goofing off were the movement of the sprites as he was supposed to work on the animation of the sprites.</li>
     <img alt ="Ideation" src="https://github.com/user-attachments/assets/c5407476-0fa6-4c43-9e60-6507c74d33a6" width="240" height="400">
 </ul>
 <br>
