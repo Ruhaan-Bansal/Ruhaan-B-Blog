@@ -43,8 +43,10 @@ permalink: /csse1final/
 <br>
 <h2>RPG Game Tinker Explanation</h2>
 <ul>
-    <li>First tinker - we put our sprites that we created using piskel and chat-GPT into the code of that particular npc </li>
-    <li>Second tinker - we created a class called collision which was the same as an NPC but it didn't take the spritesheet but rather has a hitbox in which there would be questions for the player to answer. The collision was layered over a rock in the background.</li>
+    <li>First tinker - we put our sprites that we created using piskel and chat-GPT into the code of that particular npc </li>  
+    <img alt ="Collisionv1" src="https://github.com/user-attachments/assets/d55a7e3c-3b75-4bd3-a913-dc2adb06a45f" width="600" height="200">
+    <img alt ="Collisionv2" src="https://github.com/user-attachments/assets/1615a044-9d8b-40f9-b48e-5f7414c72717" width="400" height="200">
+    <li>Second tinker - we created a class called collision which was the same as an NPC but it didn't take the spritesheet but rather has a hitbox in which there would be questions for the player to answer. The collision was layered over a rock in the background.We have the source of colison exported to game control which would export to game environment and that would show in our game. </li>
     <li>Third tinker - we changed the initial position of the sprites but also added another code line of the init position converted into pixels so that you change the sprite location and it would be shown in the game</li>
     <li>Image of ideas for our adventure game level</li>
     <li>We did add some parts of what functions that were said in the diagram such as update(), spriteWidth and spriteHeight for players and NPCs. Some things that we didn't do due to time constraints and my partner goofing off were the movement of the sprites as he was supposed to work on the animation of the sprites.</li>
