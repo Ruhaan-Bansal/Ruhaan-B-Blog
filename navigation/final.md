@@ -94,7 +94,7 @@ The main points of feedback we recieved fell into one of three main categories (
 <ul>
     <li>Expand game level using above feedback following the plans shown above.</li>
     <li>Continue learning advanced JS and python skills</li>
-    <l>Applying my computer science, python, and javascript skills to make a bigger project such as as another cool game or a customized webpage with good themes.</li>
+    <li>Applying my computer science, python, and javascript skills to make a bigger project such as as another cool game or a customized webpage with good themes.</li>
 </ul>
 <br>
 <h2>Self-Assessment</h2>
