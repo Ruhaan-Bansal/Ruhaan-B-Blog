@@ -103,7 +103,7 @@ The main points of feedback we recieved fell into one of three main categories (
 <h2>Self-Assessment</h2>
 <p>Throughout this course, I have demonstrated a strong understanding of essential tools, GitHub, VS Code, JavaScript, and MD files. My ability to navigate these technologies effectively is evident in my projects and contributions. While I recognize areas for improvement, such as further refining my skills and deepening my understanding of advanced concepts, I am confident in my progress and dedication to growth. Considering both my achievements and areas for development, I would assess my final grade as 0.925/1, reflecting my solid grasp of the material and commitment to continuous learning.</p>
 
-<a href="{{site.baseurl}}/csse1final/solo" class="custom-button1">Extra-Review for Tinker Collision </a>
+<a href="https://ruhaan-bansal.github.io/Ruhaan-B-Blog/csse1finalv2/" class="custom-button1">Extra-Review for Tinker Collision </a>
 <style>
   .custom-button1 {
     display: inline-block;
