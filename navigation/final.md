@@ -102,3 +102,23 @@ The main points of feedback we recieved fell into one of three main categories (
 <p>I created one issue and 2 burndowns on my personal blog. The burndowns were to hep me track my progress on the adventure game and final exam. The issue was for the javascript homework.</p>
 <h2>Self-Assessment</h2>
 <p>Throughout this course, I have demonstrated a strong understanding of essential tools, GitHub, VS Code, JavaScript, and MD files. My ability to navigate these technologies effectively is evident in my projects and contributions. While I recognize areas for improvement, such as further refining my skills and deepening my understanding of advanced concepts, I am confident in my progress and dedication to growth. Considering both my achievements and areas for development, I would assess my final grade as 0.925/1, reflecting my solid grasp of the material and commitment to continuous learning.</p>
+
+<a href="{{site.baseurl}}/csse1final/solo" class="custom-button1">Extra-Review for Tinker Collision </a>
+<style>
+  .custom-button1 {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(45deg, limegreen, aqua, blue);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  .custom-button1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+</style>
