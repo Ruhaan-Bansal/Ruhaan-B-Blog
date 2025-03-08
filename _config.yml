@@ -28,5 +28,6 @@ header_pages:
   - navigation/snake.md 
   - navigation/ideas.md
   - navigation/adventureGame.md
+  - navigation/trivia.md
 include:
   - "*.ipynb"
