@@ -8,7 +8,27 @@ Class of 2028'
 
 My journey starts here.
 
-I have learn the basics of Python and want to learn more languages in Computer Science such as HTML and Java    
+I have learn the basics of Python and want to learn more languages in Computer Science such as HTML and Javascript
+
+<a href="https://ruhaan-bansal.github.io/port_2025/gamify/adventureGame" class="custom-button">Link to Adventure Game Jungle </a>
+<style>
+  .custom-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(45deg, red, orange, yellow);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  .custom-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+</style>
 
 [GITHUB](https://github.com/Ruhaan-Bansal)
 
