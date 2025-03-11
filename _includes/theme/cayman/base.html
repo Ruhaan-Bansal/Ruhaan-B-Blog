@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta charset="UTF-8">
-
-{% seo %}
+    {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157278">
+    <meta name="theme-color" content="#2C3E50">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+    <style>
+      body {
+        background-color: #F4F7FA;
+        color: #2C3E50;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .page-header {
+        background-color: #2C3E50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .btn {
+        background-color: #34495E;
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px;
+        display: inline-block;
+      }
+      .btn:hover {
+        background-color: #1A252F;
+      }
+      .site-footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #2C3E50;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <header class="page-header" role="banner">
@@ -19,21 +49,18 @@
       <a href="{{ site.baseurl }}/" class="btn">Nighthawk Pages</a>
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
-      {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
       {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a href="{{ my_page.url | relative_url }}" class="btn">{{ my_page.title | escape }}</a>
-            {%- endif -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+          <a href="{{ my_page.url | relative_url }}" class="btn">{{ my_page.title | escape }}</a>
+        {%- endif -%}
       {%- endfor -%}
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
     </header>
-
     <main id="content" class="main-content" role="main">
       {{ content }}
-
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
