@@ -1,70 +1,74 @@
 ---
 layout: base
-title: Snake
+title: Snake Game Apple Eater
 permalink: /snake/
-description: Home Page
-hide: false
 ---
 
 <style>
+
     body{
     }
     .wrap{
         margin-left: auto;
         margin-right: auto;
     }
+
     canvas{
         display: none;
         border-style: solid;
         border-width: 10px;
         border-color:rgb(255, 255, 255);
     }
-    canvas {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 10px solid #fff;
-    border-radius: 30px; /* Optional: rounded corners */
-    transform: perspective(800px) rotateX(10deg) rotateY(5deg);
-    filter: contrast(1.2) brightness(1.3) saturate(1.2);
-    box-shadow: 0px 0px 25px rgba(0, 255, 0, 0.8); /* Optional: glowing effect */
+    canvas:focus{
+        outline: none;
     }
+
     /* All screens style */
     #gameover p, #setting p, #menu p{
         font-size: 20px;
     }
+
     #gameover a, #setting a, #menu a{
         font-size: 30px;
         display: block;
     }
+
     #gameover a:hover, #setting a:hover, #menu a:hover{
         cursor: pointer;
     }
+
     #gameover a:hover::before, #setting a:hover::before, #menu a:hover::before{
         content: ">";
         margin-right: 10px;
     }
+
     #menu{
         display: block;
     }
+
     #gameover{
         display: none;
     }
+
     #setting{
         display: none;
     }
+
     #setting input{
         display:none;
     }
+
     #setting label{
         cursor: pointer;
     }
+
     #setting input:checked + label{
         background-color: #FFF;
-        color: #001;
+        color: #000;
     }
 </style>
-<h2>Snake Game Verson 1.17: Im Gonna Destroy Your Eyes</h2>
+
+<h2>Snake</h2>
 <div class="container">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <p class="fs-4">Score: <span id="score_value">0</span></p>
@@ -72,14 +76,15 @@ hide: false
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
+            <p>Welcome to Snake, press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin</p>
             <a id="new_game" class="link-alert">new game</a>
-            <a id="setting_menu" class="link-alert">settings/difficulty selection</a>
+            <a id="setting_menu" class="link-alert">settings</a>
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light">
             <p>Game Over, press <span style="background-color: #FFFFFF; color: #000000">space</span> to try again</p>
             <a id="new_game1" class="link-alert">new game</a>
-            <a id="setting_menu1" class="link-alert">settings/difficulty changes</a>
+            <a id="setting_menu1" class="link-alert">settings</a>
         </div>
         <!-- Play Screen -->
         <canvas id="snake" class="wrap" width="320" height="320" tabindex="1"></canvas>
@@ -90,13 +95,11 @@ hide: false
             <br>
             <p>Speed:
                 <input id="speed1" type="radio" name="speed" value="120" checked/>
-                <br><label for="speed1">So we cant play basic games</label><br>
+                <label for="speed1">Slow</label>
                 <input id="speed2" type="radio" name="speed" value="75"/>
-                <label for="speed2">My little brother's better than you</label><br>
+                <label for="speed2">Normal</label>
                 <input id="speed3" type="radio" name="speed" value="35"/>
-                <label for="speed3">Fast</label><br>
-                <input id="speed4" type="radio" name="speed" value="25" />
-                <label for="speed4">FAST</label>
+                <label for="speed3">Fast</label>
             </p>
             <p>Wall:
                 <input id="wallon" type="radio" name="wall" value="1" checked/>
@@ -107,13 +110,8 @@ hide: false
         </div>
     </div>
 </div>
+
 <script>
-    function getRandomColor() {
-    const r = Math.floor(Math.random() * 256); // Random value for red (0 to 255)
-    const g = Math.floor(Math.random() * 256); // Random value for green (0 to 255)
-    const b = Math.floor(Math.random() * 256); // Random value for blue (0 to 255)
-    return `rgb(${r}, ${g}, ${b})`; // Return a string in RGB format
-}
     (function(){
         /* Attributes of Game */
         /////////////////////////////////////////////////////////////
@@ -137,7 +135,19 @@ hide: false
         const button_new_game2 = document.getElementById("new_game2");
         const button_setting_menu = document.getElementById("setting_menu");
         const button_setting_menu1 = document.getElementById("setting_menu1");
-        const wallSound = new Audio('assets/sadtrombone.swf.mp3');
+        //food image
+        const foodImage = new Image(); // Using optional size for image
+        const foodImages = ["{{site.baseurl}}/images/snake/apple.png", "{{site.baseurl}}/images/snake/pufferfish.png", "{{site.baseurl}}/images/snake/gCarrot.png"]
+        var index = 0;
+        foodImage.src = foodImages[index];
+        //snake image
+        const snakeHead = new Image();
+        const snakeHeads = ["{{site.baseurl}}/images/snake/headU.png", "{{site.baseurl}}/images/snake/headR.png", "{{site.baseurl}}/images/snake/headD.png", "{{site.baseurl}}/images/snake/headL.png"];
+        snakeHead.src = snakeHeads[1];
+
+        const snakeTail = new Image();
+        snakeTail.src = "{{site.baseurl}}/images/snake/apple.png";
+        
         // Game Control
         const BLOCK = 10;   // size of block rendering
         let SCREEN = SCREEN_MENU;
@@ -228,13 +238,16 @@ hide: false
                 case 2: _y++; break;
                 case 3: _x--; break;
             }
-            snake.pop(); // tail is removed
+
+            //snake.pop(); // tail is removed
+            snake.pop();
             snake.unshift({x: _x, y: _y}); // head is new in new position/orientation
+            
+            
             // Wall Checker
             if(wall === 1){
                 // Wall on, Game over test
                 if (snake[0].x < 0 || snake[0].x === canvas.width / BLOCK || snake[0].y < 0 || snake[0].y === canvas.height / BLOCK){
-                    wallSound.play();
                     showScreen(SCREEN_GAME_OVER);
                     return;
                 }
@@ -263,25 +276,32 @@ hide: false
                     return;
                 }
             }
-            const eatSound = new Audio('assets/vine-boom.mp3');
             // Snake eats food checker
             if(checkBlock(snake[0].x, snake[0].y, food.x, food.y)){
                 snake[snake.length] = {x: snake[0].x, y: snake[0].y};
                 altScore(++score);
+
+                index++;
+                if(index > foodImages.length - 1){
+                    index = 0;
+                }
+                foodImage.src = foodImages[index];
+
                 addFood();
-                activeDot(food.x, food.y);
-                eatSound.play();
+                makeFood(food.x, food.y);
+                
             }
             // Repaint canvas
-            ctx.beginPath();
-            ctx.fillStyle = getRandomColor();
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            /*ctx.beginPath();
+            ctx.fillStyle = "lightgreen";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);*/
+            drawCheckerboard();
             // Paint snake
             for(let i = 0; i < snake.length; i++){
-                activeDot(snake[i].x, snake[i].y);
+                activeDot(snake[i].x, snake[i].y, i);
             }
             // Paint food
-            activeDot(food.x, food.y);
+            makeFood(food.x, food.y);
             // Debug
             //document.getElementById("debug").innerHTML = snake_dir + " " + snake_next_dir + " " + snake[0].x + " " + snake[0].y;
             // Recursive call after speed delay, déjà vu
@@ -311,32 +331,56 @@ hide: false
         /* Key Inputs and Actions */
         /////////////////////////////////////////////////////////////
         let changeDir = function(key){
-            // test key and switch direction
-            switch(key) {
-                case 65:    // left arrow
-                    if (snake_dir !== 1)    // not right
-                        snake_next_dir = 3; // then switch left
-                    break;
-                case 87:    // up arrow
-                    if (snake_dir !== 2)    // not down
-                        snake_next_dir = 0; // then switch up
-                    break;
-                case 68:    // right arrow
-                    if (snake_dir !== 3)    // not left
-                        snake_next_dir = 1; // then switch right
-                    break;
-                case 83:    // down arrow
-                    if (snake_dir !== 0)    // not up
-                        snake_next_dir = 2; // then switch down
-                    break;
+            snakeTail.src = snakeHeads[snake_dir];
+           switch(key) {
+        case 65:    // 'A' key
+            if (snake_dir !== 1){    // not right
+                snake_next_dir = 3; // then switch left
+                snakeHead.src = snakeHeads[3];
+                
+            }
+            break;
+        case 87:    // 'W' key
+            if (snake_dir !== 2){    // not down
+                snake_next_dir = 0; // then switch up
+                snakeHead.src = snakeHeads[0];
+            }
+            break;
+        case 68:    // 'D' key
+            if (snake_dir !== 3){    // not left
+                snake_next_dir = 1; // then switch right
+                snakeHead.src = snakeHeads[1];
+            }
+            break;
+        case 83:    // 'S' key
+            if (snake_dir !== 0){    // not up
+                snake_next_dir = 2; // then switch down
+                snakeHead.src = snakeHeads[2];
+            }
+            break;
             }
         }
-        /* Dot for Food or Snake part */
-        /////////////////////////////////////////////////////////////
-        let activeDot = function(x, y){
-            ctx.fillStyle = getRandomColor();
-            ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+        
+        // Draw the Snake
+        let activeDot = function(x, y, i){
+            if(i == 0)
+                ctx.drawImage(snakeHead, x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+            /*else if(i == snake.length - 1){
+                ctx.drawImage(snakeTail, x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+                
+            }*/
+            else{
+                ctx.fillStyle = "#6abe30";
+                ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+            }
         }
+
+        
+        // Make food
+        let makeFood = function(x, y){
+            ctx.drawImage(foodImage, x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+        }
+
         /* Random food placement */
         /////////////////////////////////////////////////////////////
         let addFood = function(){
@@ -356,6 +400,7 @@ hide: false
         /* Update Score */
         /////////////////////////////////////////////////////////////
         let altScore = function(score_val){
+            //ele_score.innerHTML = String(score_val);
             ele_score.innerHTML = String(score_val);
         }
         /////////////////////////////////////////////////////////////
@@ -369,8 +414,22 @@ hide: false
         /////////////////////////////////////////////////////////////
         let setWall = function(wall_value){
             wall = wall_value;
-            if(wall === 0){screen_snake.style.borderColor = "#606060";}
-            if(wall === 1){screen_snake.style.borderColor = "#FFFFFF";}
+            if(wall === 0){screen_snake.style.borderColor = "#FFFFFF";}
+            if(wall === 1){screen_snake.style.borderColor = "#056300";}
         }
+
+        // Draw Checkerboard pattern
+        let drawCheckerboard = function () {
+            const colors = ["#c7ffc4", "#adffa8"]; // colors for the checkerboard
+            const tileSize = BLOCK; 
+
+            for (let y = 0; y < canvas.height / tileSize; y++) {
+                for (let x = 0; x < canvas.width / tileSize; x++) {
+                    const colorIndex = (x + y) % 2; // Alternate colors
+                    ctx.fillStyle = colors[colorIndex];
+                    ctx.fillRect(x * tileSize, y * tileSize, tileSize, tileSize);
+                }
+            }
+};
     })();
 </script>

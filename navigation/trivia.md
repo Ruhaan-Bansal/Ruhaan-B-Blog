@@ -29,10 +29,11 @@ hide: false
 <button id="submit-btn" onclick="checkAnswer()">Submit Answer</button>
 
 ### Scoreboard
-| Player | Score |
-|--------|-------|
-| Player 1 | 0 |
-| Player 2 | 0 |
+<table>
+  <tr><th>Player</th><th>Score</th></tr>
+  <tr><td>Player 1</td><td id="player1-score">0</td></tr>
+  <tr><td>Player 2</td><td id="player2-score">0</td></tr>
+</table>
 
 <style>
 /* General Styling */
@@ -52,7 +53,7 @@ h1 {
 }
 
 h2 {
-    color: #666;
+    color: #007BFF;  /* Set rules color to blue */
     font-size: 1.2em;
     margin-top: 10px;
 }
@@ -86,11 +87,11 @@ input[type="text"]:focus {
 
 /* Button Styling */
 #submit-btn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+    color: #007BFF;
     font-size: 1.2em;
     padding: 12px 24px;
-    border: none;
+    border: 2px solid #007BFF;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
@@ -98,12 +99,14 @@ input[type="text"]:focus {
 }
 
 #submit-btn:hover {
-    background-color: #45a049;
+    background-color: #007BFF;
+    color: white;
     transform: scale(1.1);
 }
 
 #submit-btn:active {
-    background-color: #388e3c;
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 
 /* Table Styling */
@@ -121,45 +124,4 @@ table {
 table th, table td {
     padding: 10px;
     text-align: center;
-    border: 1px solid #ddd;
-}
-
-table th {
-    background-color: #4CAF50;
-    color: white;
-}
-</style>
-
-<script>
-let scores = { player1: 0, player2: 0 };
-let questions = [
-    { question: "What is the capital of France?", answer: "Paris" },
-    { question: "Who wrote 'Romeo and Juliet'?", answer: "William Shakespeare" },
-    { question: "What is the largest planet in our solar system?", answer: "Jupiter" },
-    { question: "What is the boiling point of water?", answer: "100°C" },
-    { question: "How many continents are there?", answer: "7" },
-    { question: "What is the tallest mountain on Earth?", answer: "Mount Everest" },
-    { question: "Who was the first President of the United States?", answer: "George Washington" },
-    { question: "What is the largest ocean on Earth?", answer: "Pacific Ocean" },
-    { question: "Who painted the Mona Lisa?", answer: "Leonardo da Vinci" },
-    { question: "What is the hardest natural substance on Earth?", answer: "Diamond" },
-    // Add more questions here...
-];
-
-let currentQuestionIndex = 0;
-let currentAnswer = "";
-let turn = 1;
-
-function loadNextQuestion() {
-    if (currentQuestionIndex < questions.length) {
-        let currentQuestionObj = questions[currentQuestionIndex];
-        document.getElementById("question-text").textContent = currentQuestionObj.question;
-        currentAnswer = currentQuestionObj.answer;
-        currentQuestionIndex++;
-    } else {
-        alert("Game Over! All questions have been asked.");
-    }
-}
-
-function checkAnswer() {
-    let answerInput = document.getElementById("answer").value;
+  
