@@ -140,8 +140,8 @@ Code I Zhengji <br>
 # Hack Three (Spritesheet part (NOT IMPLEMENTATION))
 
 
-I created this sprite sheet: <br>
-<img alt ="Ruhaan" src="chillguyv3.png" width="320" height="500">
+Zhengji (green color) created this sprite sheet: <br>
+<img alt ="Ruhaan" src="https://github.com/user-attachments/assets/acc3ed88-3903-4a4b-8b45-6a8d2340ee71" width="250" height="500">
 
-Redesigned sprite sheet by Zhengji: <br>
-<img alt ="Ruhaan" src="chillguyv2.png" width="320" height="500">
+Redesigned sprite sheet by me: <br>
+<img alt ="Ruhaan" src="https://github.com/user-attachments/assets/cc27c7c4-f0c7-4cf1-bac1-153a49a553bf" width="250" height="500">
