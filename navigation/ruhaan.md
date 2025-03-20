@@ -2,11 +2,11 @@
 layout: page
 title: Hacks 1 and 3 documentation made by Zhengji Li and Ruhaan Bansal
 description: Hacks 1 and 3
-permalink: /hck1-3/
---
+permalink: /hck13/
+---
 
-# Documentation<br>
- - Replaced the original player data objects:<br>
+# Documentation
+<br> - Replaced the original player data objects:<br>
  - Removed player1_data object with properties for a red square (id, greeting, scale, position, color, hitbox, WASD keypress)<br>
  - Removed player2_data object with properties for a green square (id, greeting, scale, position, color, hitbox, arrow keypress)<br>
  - Implemented new Player class with physics-based movement:<br>

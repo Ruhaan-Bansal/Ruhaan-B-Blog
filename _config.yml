@@ -28,6 +28,5 @@ header_pages:
   - navigation/snake.md 
   - navigation/ideas.md
   - navigation/adventureGame.md
-  - navigation/zhengji_and_ruhaan_hacks1-4.md
-include:
-  - "*.ipynb"
+  - navigation/ruhaan.md
+
