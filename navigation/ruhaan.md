@@ -145,3 +145,9 @@ Zhengji (green color) created this sprite sheet: <br>
 
 Redesigned sprite sheet by me: <br>
 <img alt ="Ruhaan" src="https://github.com/user-attachments/assets/cc27c7c4-f0c7-4cf1-bac1-153a49a553bf" width="250" height="500">
+
+
+# Hack Three(spritesheet part(NOT IMPLEMENTATION))
+
+Redesigned sprite sheet by me: <br>
+<img alt ="Ruhaan" src="https://github.com/user-attachments/assets/31c058f5-9bd8-4b39-9817-72dbc0dc6817" width="100" height="500">
