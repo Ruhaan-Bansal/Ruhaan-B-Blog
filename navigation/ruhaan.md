@@ -20,7 +20,7 @@ permalink: /hck13/
 
 
 
-Code I did<br>
+Code I Zhengji <br>
 
 
  ```
@@ -140,8 +140,8 @@ Code I did<br>
 # Hack Three (Spritesheet part (NOT IMPLEMENTATION))
 
 
-Ruhaan created this sprite sheet: <br>
-[Ruhaan work, he created this sprite het](chillguyv3.png)
+I created this sprite sheet: <br>
+<img alt ="Ruhaan" src="chillguyv3.png" width="320" height="500">
 
-Redesigned sprite sheet by me: <br>
-[redesigned sprite sheet](chillguyv2.png)
+Redesigned sprite sheet by Zhengji: <br>
+<img alt ="Ruhaan" src="chillguyv2.png" width="320" height="500">
