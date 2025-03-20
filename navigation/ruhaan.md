@@ -141,9 +141,7 @@ Code I did<br>
 
 
 Ruhaan created this sprite sheet: <br>
-![Ruhaan work, he created this sprite het](chillguyv3.png)
-
-
+[Ruhaan work, he created this sprite het](chillguyv3.png)
 
 Redesigned sprite sheet by me: <br>
-![redesigned sprite sheet](chillguyv2.png)
+[redesigned sprite sheet](chillguyv2.png)
