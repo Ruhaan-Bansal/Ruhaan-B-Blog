@@ -1,4 +1,4 @@
-current directory: /mnt/c/Users/Ruhaan/CSSE/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/bigdecimal-3.1.9/ext/bigdecimal
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/bigdecimal-3.1.9/ext/bigdecimal
 /usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
 checking for __builtin_clz()... yes
 checking for __builtin_clzl()... yes
@@ -27,6 +27,7 @@ checking for rb_category_warn() in ruby.h... yes
 checking for RB_WARN_CATEGORY_DEPRECATED in ruby.h... yes
 creating Makefile
 
+<<<<<<< HEAD
 current directory: /mnt/c/Users/Ruhaan/CSSE/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/bigdecimal-3.1.9/ext/bigdecimal
 make DESTDIR\= sitearchdir\=./.gem.20250207-1737-l123fc sitelibdir\=./.gem.20250207-1737-l123fc clean
 make: Warning: File 'Makefile' has modification time 28799 s in the future
@@ -50,3 +51,20 @@ current directory: /mnt/c/Users/Ruhaan/CSSE/Ruhaan-B-Blog/vendor/bundle/ruby/3.2
 make DESTDIR\= sitearchdir\=./.gem.20250207-1737-l123fc sitelibdir\=./.gem.20250207-1737-l123fc clean
 make: Warning: File 'Makefile' has modification time 28789 s in the future
 make: warning:  Clock skew detected.  Your build may be incomplete.
+=======
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/bigdecimal-3.1.9/ext/bigdecimal
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-7un3ft sitelibdir\=./.gem.20250206-1508-7un3ft clean
+
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/bigdecimal-3.1.9/ext/bigdecimal
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-7un3ft sitelibdir\=./.gem.20250206-1508-7un3ft
+compiling bigdecimal.c
+compiling missing.c
+linking shared-object bigdecimal.so
+
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/bigdecimal-3.1.9/ext/bigdecimal
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-7un3ft sitelibdir\=./.gem.20250206-1508-7un3ft install
+/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20250206-1508-7un3ft
+
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/bigdecimal-3.1.9/ext/bigdecimal
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-7un3ft sitelibdir\=./.gem.20250206-1508-7un3ft clean
+>>>>>>> b327f44 (Save changes before rebase)

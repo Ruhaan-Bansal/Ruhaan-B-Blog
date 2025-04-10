@@ -1,7 +1,8 @@
-current directory: /mnt/c/Users/Ruhaan/CSSE/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
 /usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
 creating Makefile
 
+<<<<<<< HEAD
 current directory: /mnt/c/Users/Ruhaan/CSSE/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
 make DESTDIR\= sitearchdir\=./.gem.20250207-1737-lqsmm6 sitelibdir\=./.gem.20250207-1737-lqsmm6 clean
 make: Warning: File 'Makefile' has modification time 28799 s in the future
@@ -24,3 +25,19 @@ current directory: /mnt/c/Users/Ruhaan/CSSE/Ruhaan-B-Blog/vendor/bundle/ruby/3.2
 make DESTDIR\= sitearchdir\=./.gem.20250207-1737-lqsmm6 sitelibdir\=./.gem.20250207-1737-lqsmm6 clean
 make: Warning: File 'Makefile' has modification time 28797 s in the future
 make: warning:  Clock skew detected.  Your build may be incomplete.
+=======
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-1bci71 sitelibdir\=./.gem.20250206-1508-1bci71 clean
+
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-1bci71 sitelibdir\=./.gem.20250206-1508-1bci71
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-1bci71 sitelibdir\=./.gem.20250206-1508-1bci71 install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250206-1508-1bci71/racc
+
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-1bci71 sitelibdir\=./.gem.20250206-1508-1bci71 clean
+>>>>>>> b327f44 (Save changes before rebase)

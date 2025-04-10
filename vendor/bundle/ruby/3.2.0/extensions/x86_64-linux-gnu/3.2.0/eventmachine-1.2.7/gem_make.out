@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 current directory: /mnt/c/Users/Ruhaan/CSSE/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
 /usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
 creating Makefile
@@ -24,4 +25,29 @@ make: warning:  Clock skew detected.  Your build may be incomplete.
 current directory: /mnt/c/Users/Ruhaan/CSSE/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make DESTDIR\= sitearchdir\=./.gem.20250207-1737-9hm1ga sitelibdir\=./.gem.20250207-1737-9hm1ga clean
 make: Warning: File 'Makefile' has modification time 28797 s in the future
+=======
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+creating Makefile
+
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-mtq8yi sitelibdir\=./.gem.20250206-1508-mtq8yi clean
+
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-mtq8yi sitelibdir\=./.gem.20250206-1508-mtq8yi
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-mtq8yi sitelibdir\=./.gem.20250206-1508-mtq8yi install
+make: Warning: File 'Makefile' has modification time 51 s in the future
+linking shared-object fastfilereaderext.so
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20250206-1508-mtq8yi
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+current directory: /home/ruhamobile/nighthawk/Ruhaan-B-Blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250206-1508-mtq8yi sitelibdir\=./.gem.20250206-1508-mtq8yi clean
+make: Warning: File 'Makefile' has modification time 51 s in the future
+>>>>>>> b327f44 (Save changes before rebase)
 make: warning:  Clock skew detected.  Your build may be incomplete.
