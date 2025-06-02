@@ -1,34 +1,26 @@
-title: Ruhaan Bansal's personal blog
-description: "my blog"
+title: Ruhaan's Blog
+description: "Class of 2025"
 owner_name: Ruhaan Bansal
 github_username: Ruhaan-Bansal
-github_repo: "Ruhaan-B-Blog"
-baseurl: "/Ruhaan-B-Blog"
+github_repo: "Ruhaan-B-Blog" 
+baseurl: "/blog"
 future: true
-# remote_theme: jekyll/minima
+remote_theme: jekyll/minima
 minima:
   skin: dark
   social_links:
     - { platform: github, user_url: "https://github.com/nighthawkcoders"}
     - { platform: x, user_url: "https://x.com/NighthawkCoding/" }
-    - { platform: youtube, user_url: "https://www.youtube.com/@nighthawkcodingsociety2868" }
+    - { platform: youtube, user_url: "https://www.youtube.com/@nighthawkcodingsociety2868" } 
 # remote_theme: pages-themes/midnight@v0.2.0
+# remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/dinky@v0.2.0
 # remote_theme: pages-themes/minimal@v0.2.0
-remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/time-machine@v0.2.0
 plugins:
   - jekyll-remote-theme
-minima:
-  nav_pages:
-    - navigation/final.md
-    - navigation/lessons.md
-    - navigation/blog.md
-    - navigation/search.md  
-    - navigation/about.md
-    - navigation/snake.md 
-    - navigation/ideas.md
-    - navigation/adventureGame.md
-    - navigation/ruhaan.md
-    
-    
+header_pages:
+  - navigation/blog.md
+  - navigation/search.md
+  - navigation/about.md
+  - README4YML.md
